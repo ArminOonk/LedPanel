@@ -261,6 +261,44 @@
 <text x="-2" y="-2" size="0.8128" layer="21" font="vector" rot="R90">&gt;name</text>
 <text x="3" y="-2" size="0.8128" layer="21" font="vector" rot="R90">&gt;value</text>
 </package>
+<package name="AK500/2">
+<description>&lt;b&gt;CONNECTOR&lt;/b&gt;</description>
+<wire x1="-5.08" y1="-3.556" x2="-5.08" y2="-2.159" width="0.1524" layer="21"/>
+<wire x1="5.08" y1="3.937" x2="-5.08" y2="3.937" width="0.1524" layer="21"/>
+<wire x1="5.08" y1="3.937" x2="5.08" y2="2.159" width="0.1524" layer="21"/>
+<wire x1="-5.08" y1="-3.556" x2="5.08" y2="-3.556" width="0.1524" layer="21"/>
+<wire x1="-5.08" y1="3.048" x2="-5.588" y2="3.175" width="0.1524" layer="21"/>
+<wire x1="-5.08" y1="3.048" x2="-5.08" y2="3.937" width="0.1524" layer="21"/>
+<wire x1="-5.588" y1="3.175" x2="-5.588" y2="2.032" width="0.1524" layer="21"/>
+<wire x1="-5.588" y1="2.032" x2="-5.08" y2="2.159" width="0.1524" layer="21"/>
+<wire x1="-5.08" y1="2.159" x2="-5.08" y2="3.048" width="0.1524" layer="21"/>
+<wire x1="-5.08" y1="2.159" x2="5.08" y2="2.159" width="0.1524" layer="21"/>
+<wire x1="5.08" y1="2.159" x2="5.08" y2="-2.159" width="0.1524" layer="21"/>
+<wire x1="-5.08" y1="-2.159" x2="5.08" y2="-2.159" width="0.1524" layer="21"/>
+<wire x1="-5.08" y1="-2.159" x2="-5.08" y2="2.159" width="0.1524" layer="21"/>
+<wire x1="5.08" y1="-2.159" x2="5.08" y2="-3.556" width="0.1524" layer="21"/>
+<wire x1="1.4986" y1="-1.397" x2="3.9116" y2="1.016" width="0.1524" layer="51"/>
+<wire x1="1.1176" y1="-1.016" x2="3.5306" y2="1.397" width="0.1524" layer="51"/>
+<wire x1="-3.9116" y1="-1.016" x2="-1.4986" y2="1.397" width="0.1524" layer="51"/>
+<wire x1="-3.5306" y1="-1.397" x2="-1.1176" y2="1.016" width="0.1524" layer="51"/>
+<wire x1="1.4986" y1="-1.016" x2="3.5306" y2="1.016" width="0.6096" layer="51"/>
+<wire x1="-3.5306" y1="-1.016" x2="-1.4986" y2="1.016" width="0.6096" layer="51"/>
+<wire x1="1.1176" y1="-1.016" x2="1.4986" y2="-1.397" width="0.1524" layer="51"/>
+<wire x1="3.5306" y1="1.397" x2="3.9116" y2="1.016" width="0.1524" layer="51"/>
+<wire x1="-3.9116" y1="-1.016" x2="-3.5306" y2="-1.397" width="0.1524" layer="51"/>
+<wire x1="-1.4986" y1="1.397" x2="-1.1176" y2="1.016" width="0.1524" layer="51"/>
+<circle x="2.5146" y="3.048" radius="0.508" width="0.1524" layer="21"/>
+<circle x="-2.5146" y="3.048" radius="0.508" width="0.1524" layer="21"/>
+<circle x="2.5146" y="0" radius="1.778" width="0.1524" layer="51"/>
+<circle x="-2.5146" y="0" radius="1.778" width="0.1524" layer="51"/>
+<pad name="1" x="-2.5146" y="0" drill="1.3208" shape="long" rot="R90"/>
+<pad name="2" x="2.5146" y="0" drill="1.3208" shape="long" rot="R90"/>
+<text x="-5.08" y="4.445" size="1.778" layer="25" ratio="10">&gt;NAME</text>
+<text x="-5.08" y="-5.715" size="1.778" layer="27" ratio="10">&gt;VALUE</text>
+<text x="-4.445" y="2.54" size="0.9906" layer="21" ratio="12">1</text>
+<text x="0.635" y="2.54" size="0.9906" layer="21" ratio="12">2</text>
+<rectangle x1="-0.381" y1="-1.905" x2="0.381" y2="1.905" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="LED">
@@ -326,6 +364,17 @@
 <symbol name="SOLDER_PAD">
 <pin name="P$1" x="0" y="5.08" length="middle" rot="R270"/>
 <circle x="0" y="0" radius="1.27" width="0.254" layer="94"/>
+</symbol>
+<symbol name="KL">
+<circle x="1.27" y="0" radius="1.27" width="0.254" layer="94"/>
+<text x="-1.27" y="0.889" size="1.778" layer="95" rot="R180">&gt;NAME</text>
+<pin name="KL" x="5.08" y="0" visible="off" length="short" direction="pas" rot="R180"/>
+</symbol>
+<symbol name="KLV">
+<circle x="1.27" y="0" radius="1.27" width="0.254" layer="94"/>
+<text x="-1.27" y="0.889" size="1.778" layer="95" rot="R180">&gt;NAME</text>
+<text x="-3.81" y="-3.683" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="KL" x="5.08" y="0" visible="off" length="short" direction="pas" rot="R180"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -444,6 +493,29 @@
 </connects>
 <technologies>
 <technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="AK500/2" prefix="X" uservalue="yes">
+<description>&lt;b&gt;CONNECTOR&lt;/b&gt;</description>
+<gates>
+<gate name="-1" symbol="KL" x="0" y="5.08" addlevel="always"/>
+<gate name="-2" symbol="KLV" x="0" y="0" addlevel="always"/>
+</gates>
+<devices>
+<device name="" package="AK500/2">
+<connects>
+<connect gate="-1" pin="KL" pad="1"/>
+<connect gate="-2" pin="KL" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="MF" value="" constant="no"/>
+<attribute name="MPN" value="" constant="no"/>
+<attribute name="OC_FARNELL" value="unknown" constant="no"/>
+<attribute name="OC_NEWARK" value="unknown" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -1545,9 +1617,11 @@ INDUCTOR POWER 3.3UH 4.0A SMD&lt;br&gt;
 <variantdefs>
 </variantdefs>
 <classes>
-<class number="0" name="default" width="0.254" drill="0">
+<class number="0" name="default" width="0.1524" drill="0.3048">
+<clearance class="0" value="0.1524"/>
 </class>
-<class number="1" name="power" width="0.508" drill="0">
+<class number="1" name="power" width="0.1524" drill="0.3048">
+<clearance class="1" value="0.1524"/>
 </class>
 </classes>
 <parts>
@@ -1614,6 +1688,9 @@ INDUCTOR POWER 3.3UH 4.0A SMD&lt;br&gt;
 <part name="U$18" library="LedPanel" deviceset="SOLDER_PAD" device="" value="GND"/>
 <part name="SUPPLY3" library="LedPanel" deviceset="5V" device=""/>
 <part name="GND7" library="LedPanel" deviceset="GND" device=""/>
+<part name="POWER" library="LedPanel" deviceset="AK500/2" device=""/>
+<part name="P+7" library="LedPanel" deviceset="VCC" device=""/>
+<part name="GND8" library="LedPanel" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -1698,6 +1775,10 @@ INDUCTOR POWER 3.3UH 4.0A SMD&lt;br&gt;
 <instance part="U$18" gate="A" x="177.8" y="228.6" rot="R90"/>
 <instance part="SUPPLY3" gate="G$1" x="170.18" y="233.68"/>
 <instance part="GND7" gate="1" x="170.18" y="226.06"/>
+<instance part="POWER" gate="-1" x="53.34" y="198.12"/>
+<instance part="POWER" gate="-2" x="53.34" y="193.04"/>
+<instance part="P+7" gate="1" x="60.96" y="200.66"/>
+<instance part="GND8" gate="1" x="60.96" y="187.96"/>
 </instances>
 <busses>
 </busses>
@@ -1822,6 +1903,12 @@ INDUCTOR POWER 3.3UH 4.0A SMD&lt;br&gt;
 <junction x="337.82" y="137.16"/>
 <pinref part="P+6" gate="1" pin="VCC"/>
 </segment>
+<segment>
+<pinref part="POWER" gate="-1" pin="KL"/>
+<pinref part="P+7" gate="1" pin="VCC"/>
+<wire x1="58.42" y1="198.12" x2="60.96" y2="198.12" width="0.1524" layer="91"/>
+<wire x1="60.96" y1="198.12" x2="60.96" y2="200.66" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="GND" class="0">
 <segment>
@@ -1870,6 +1957,12 @@ INDUCTOR POWER 3.3UH 4.0A SMD&lt;br&gt;
 <pinref part="U$18" gate="A" pin="P$1"/>
 <wire x1="170.18" y1="228.6" x2="172.72" y2="228.6" width="0.1524" layer="91"/>
 <junction x="170.18" y="228.6"/>
+</segment>
+<segment>
+<pinref part="POWER" gate="-2" pin="KL"/>
+<pinref part="GND8" gate="1" pin="GND"/>
+<wire x1="58.42" y1="193.04" x2="60.96" y2="193.04" width="0.1524" layer="91"/>
+<wire x1="60.96" y1="193.04" x2="60.96" y2="190.5" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="LED1_OUT-" class="1">
@@ -2117,16 +2210,16 @@ INDUCTOR POWER 3.3UH 4.0A SMD&lt;br&gt;
 </net>
 <net name="CTRL1" class="0">
 <segment>
+<pinref part="U1" gate="A" pin="CTRL"/>
+<wire x1="20.32" y1="124.46" x2="7.62" y2="124.46" width="0.1524" layer="91"/>
+<label x="7.62" y="124.46" size="1.778" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
 <pinref part="IC1" gate="G$1" pin="R"/>
 <pinref part="R7" gate="G$1" pin="2"/>
 <wire x1="152.4" y1="195.58" x2="132.08" y2="195.58" width="0.1524" layer="91"/>
 <wire x1="132.08" y1="195.58" x2="132.08" y2="203.2" width="0.1524" layer="91"/>
 <label x="132.08" y="195.58" size="1.778" layer="95" rot="R180" xref="yes"/>
-</segment>
-<segment>
-<pinref part="U1" gate="A" pin="CTRL"/>
-<wire x1="20.32" y1="124.46" x2="7.62" y2="124.46" width="0.1524" layer="91"/>
-<label x="7.62" y="124.46" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="CTRL2" class="0">
@@ -2145,16 +2238,16 @@ INDUCTOR POWER 3.3UH 4.0A SMD&lt;br&gt;
 </net>
 <net name="CTRL3" class="0">
 <segment>
+<pinref part="U3" gate="A" pin="CTRL"/>
+<wire x1="264.16" y1="124.46" x2="251.46" y2="124.46" width="0.1524" layer="91"/>
+<label x="251.46" y="124.46" size="1.778" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
 <pinref part="IC1" gate="G$1" pin="B"/>
 <pinref part="R9" gate="G$1" pin="2"/>
 <wire x1="152.4" y1="190.5" x2="106.68" y2="190.5" width="0.1524" layer="91"/>
 <wire x1="106.68" y1="190.5" x2="106.68" y2="203.2" width="0.1524" layer="91"/>
 <label x="106.68" y="190.5" size="1.778" layer="95" rot="R180" xref="yes"/>
-</segment>
-<segment>
-<pinref part="U3" gate="A" pin="CTRL"/>
-<wire x1="264.16" y1="124.46" x2="251.46" y2="124.46" width="0.1524" layer="91"/>
-<label x="251.46" y="124.46" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="N$13" class="0">
