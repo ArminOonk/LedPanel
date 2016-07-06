@@ -857,7 +857,10 @@ Your Eurocircuits Team</description>
 <vertex x="11" y="16"/>
 <vertex x="27" y="16"/>
 <vertex x="27" y="0"/>
-<vertex x="0" y="0"/>
+<vertex x="7" y="0"/>
+<vertex x="7" y="4"/>
+<vertex x="4" y="7"/>
+<vertex x="0" y="7"/>
 </polygon>
 <wire x1="2" y1="76.6" x2="2" y2="71" width="1.016" layer="1"/>
 </signal>
@@ -908,8 +911,10 @@ Your Eurocircuits Team</description>
 </polygon>
 <polygon width="0.2032" layer="16" isolate="0.3048">
 <vertex x="82" y="68"/>
-<vertex x="7" y="68"/>
-<vertex x="7" y="71"/>
+<vertex x="9" y="68"/>
+<vertex x="9" y="77"/>
+<vertex x="15" y="77"/>
+<vertex x="15" y="71"/>
 <vertex x="41" y="71"/>
 <vertex x="41" y="78"/>
 <vertex x="47" y="78"/>
@@ -941,7 +946,10 @@ Your Eurocircuits Team</description>
 <via x="42" y="76" extent="1-16" drill="0.31"/>
 <via x="43" y="76" extent="1-16" drill="0.31"/>
 <via x="44" y="76" extent="1-16" drill="0.31"/>
-<wire x1="15" y1="78.45" x2="28" y2="70" width="0" layer="19" extent="1-1"/>
+<via x="9" y="76" extent="1-16" drill="0.31"/>
+<via x="10" y="76" extent="1-16" drill="0.31"/>
+<via x="11" y="76" extent="1-16" drill="0.31"/>
+<via x="12" y="76" extent="1-16" drill="0.31"/>
 </signal>
 <signal name="GND">
 <contactref element="U1" pad="2"/>
@@ -982,6 +990,10 @@ Your Eurocircuits Team</description>
 <vertex x="48" y="79"/>
 <vertex x="40" y="79"/>
 <vertex x="40" y="72"/>
+<vertex x="16" y="72"/>
+<vertex x="16" y="78"/>
+<vertex x="8" y="78"/>
+<vertex x="8" y="72"/>
 <vertex x="4" y="72"/>
 </polygon>
 <wire x1="5.7046" y1="74" x2="4.5" y2="74" width="0.6096" layer="1"/>
@@ -1019,7 +1031,10 @@ Your Eurocircuits Team</description>
 <vertex x="11" y="92"/>
 <vertex x="19" y="92"/>
 <vertex x="19" y="100"/>
-<vertex x="0" y="100"/>
+<vertex x="7" y="100"/>
+<vertex x="7" y="96"/>
+<vertex x="4" y="93"/>
+<vertex x="0" y="93"/>
 </polygon>
 <wire x1="2" y1="79.4" x2="2" y2="85" width="1.016" layer="1"/>
 </signal>
@@ -1504,15 +1519,6 @@ Your Eurocircuits Team</description>
 <wire x1="96.9734" y1="83.9734" x2="93" y2="80" width="0.2032" layer="1"/>
 <wire x1="93" y1="80" x2="93" y2="79" width="0.2032" layer="1"/>
 <wire x1="93" y1="78.5" x2="93" y2="79" width="0.2032" layer="1"/>
-</signal>
-<signal name="N$15">
-<wire x1="6" y1="1" x2="0.5" y2="5.5" width="0.2032" layer="1" curve="168.690068"/>
-<wire x1="99" y1="6" x2="94.5" y2="0.5" width="0.2032" layer="1" curve="168.690068"/>
-<wire x1="94" y1="99" x2="99.5" y2="94.5" width="0.2032" layer="1" curve="168.690068"/>
-<wire x1="1" y1="94" x2="5.5" y2="99.5" width="0.2032" layer="1" curve="168.690068"/>
-<wire x1="99" y1="6" x2="99.5" y2="94.5" width="0" layer="19" extent="1-1"/>
-<wire x1="5.5" y1="99.5" x2="94" y2="99" width="0" layer="19" extent="1-1"/>
-<wire x1="6" y1="1" x2="94.5" y2="0.5" width="0" layer="19" extent="1-1"/>
 </signal>
 </signals>
 </board>
